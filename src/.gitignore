@@ -1,0 +1,15 @@
+# Ignore Windows system files
+AppData/
+*.log
+*.tmp
+*.DS_Store
+
+# Ignore Node.js dependencies (if applicable)
+node_modules/
+
+# Ignore build output (if applicable)
+dist/
+build/
+
+# Ignore local environment files
+.env
