@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./home";
-//import Login from "./login";
+import Login from "./Login";
 import { useEffect, useState } from "react";
 import "./App.css";
 
@@ -11,10 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route
-          // path="/login"
-          // element={<Login} />}
-          />
+          <Route path="/Login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>
