@@ -5,8 +5,10 @@ import logoo from "./logo.png";
 import { Link } from "react-router-dom";
 
 const Login = (props) => {
+  const navigate = useNavigate();
+
   const onButtonClick = () => {
-    // You'll update this function later
+    navigate("/Signup");
   };
 
   return (
@@ -39,7 +41,7 @@ const Login = (props) => {
             className={"loginButton"}
             type="button"
             onClick={onButtonClick}
-            value={"Sign in"}
+            value={"Sign up"}
           />
         </div>
       </div>

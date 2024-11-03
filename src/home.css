@@ -91,3 +91,53 @@
   margin-top: 10px; /* Adds space below each input */
   margin-bottom: 10px;
 }
+
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Adds space between image and form */
+  height: 100vh; /* Full viewport height */
+  align-items: stretch;
+}
+
+.signupImageContainer {
+  display: flex;
+  flex: 1;
+  background-color: #f9f9f9; /* Background color */
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./signup-img.jpg"); /* Background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ensures full viewport height */
+}
+
+.signupLogo img {
+  width: 450px; /* Set the desired width for the image */
+  height: auto; /* Keeps the image aspect ratio */
+}
+
+.signupFormContainer {
+  display: flex;
+  flex: 5;
+  background-color: white; /* Background color */
+  padding: 20px;
+  text-align: center;
+  font-family: DejaVu Sans Mono, monospace;
+  justify-content: center; /* Adds space between image and form */
+  padding-top: 80px;
+}
+
+.signupInput {
+  border: 2px solid #b7ce66;
+  border-radius: 5px;
+  padding: 10px; /* Adds inner padding for better spacing */
+  width: 100%; /* Makes the input full width */
+  box-sizing: border-box; /* Ensures padding doesn’t increase the input's width */
+  margin-top: 10px; /* Adds space below each input */
+  margin-bottom: 10px;
+}
