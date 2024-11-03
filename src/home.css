@@ -39,6 +39,18 @@
   height: 100vh; /* Ensures full viewport height */
 }
 
+.authenLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.authenLogo img {
+  width: 700px; /* Set the desired width for the image */
+  height: auto; /* Keeps the image aspect ratio */
+}
+
 .authenFormContainer {
   flex: 1; /* Takes up 2/5 of the container width */
   padding: 20px;
@@ -48,21 +60,12 @@
   justify-content: center; /* Centers content vertically */
   align-items: center; /* Centers content horizontally (optional) */
   color: black;
+  font-family: DejaVu Sans Mono, monospace;
 }
 
 .authenFormContainer form {
   width: 100%; /* Form takes up full container width */
   max-width: 300px; /* Optional: limits form width */
-}
-
-.authenLogo {
-  display: flex;
-  justify-content: center; /* Centers the image horizontally */
-  align-items: center; /* Centers the image vertically */
-}
-.authenLogo img {
-  width: 500px; /* Set the desired width for the image */
-  height: auto; /* Keeps the image aspect ratio */
 }
 
 .loginButton {

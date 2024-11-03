@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
-import logo from "./logo-back.jpeg";
+import logoo from "./logo.png";
+import { Link } from "react-router-dom";
 
 const Login = (props) => {
   const onButtonClick = () => {
@@ -10,34 +11,35 @@ const Login = (props) => {
 
   return (
     <div className="authenContainer">
-      <div className={"authenImageContainer"}></div>
-      <div className={"authenFormContainer"}>
-        <div>
-          <div className="authenLogo">
-            <img src={logo} />
-          </div>
+      <div className={"authenImageContainer"}>
+        <div className={"authenLogo"}>
+          <Link to="/">
+            <img src={logoo} />
+          </Link>
         </div>
+      </div>
+      <div className={"authenFormContainer"}>
         <form>
-          <label>USERNAME:</label>
+          <label>Username:</label>
           <br />
           <input type="text" className="authenInput" />
           <br />
-          <label>PASSWORD:</label>
+          <label>Password:</label>
           <br />
           <input type="text" className="authenInput" />
-          <input className={"loginButton"} type="submit" value={"LOG IN"} />
+          <input className={"loginButton"} type="submit" value={"Log in"} />
         </form>
         <br />
         <br />
         <br />
         <br />
-        <div> NOT A MEMBER? </div>
+        <div> Not a member? </div>
         <div>
           <input
             className={"loginButton"}
             type="button"
             onClick={onButtonClick}
-            value={"SIGN IN!"}
+            value={"Sign in"}
           />
         </div>
       </div>
