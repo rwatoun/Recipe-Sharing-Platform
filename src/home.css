@@ -82,6 +82,10 @@
   margin: 15px;
 }
 
+.loginButton:hover {
+  background-color: #9dce66;
+}
+
 .authenInput {
   border: 2px solid #b7ce66;
   border-radius: 5px;

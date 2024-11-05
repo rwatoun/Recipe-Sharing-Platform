@@ -29,7 +29,7 @@ const Login = (props) => {
           <label>Password:</label>
           <br />
           <input type="text" className="authenInput" />
-          <input className={"loginButton"} type="submit" value={"Log in"} />
+          <input type="submit" value={"Log in"} className={"loginButton"} />
         </form>
         <br />
         <br />
