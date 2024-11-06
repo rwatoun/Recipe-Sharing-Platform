@@ -1,91 +1,145 @@
-.mainContainer {
-  background-color: aliceblue;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+/* src/home.css */
+.home-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f7f9fc;
 }
-.inputButton {
-  background-color: rgb(202, 202, 202);
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 15px;
+
+.hero-section {
+  background: #68b347;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  margin-bottom: 30px;
+}
+
+.hero-section .brand-name {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #68b347;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  font-size: 1.2em;
   cursor: pointer;
-  letter-spacing: 1px;
-  margin: 15px;
-}
-.authenContainer {
-  display: flex;
-  align-items: center; /* Centers items vertically */
-  justify-content: center; /* Adds space between image and form */
-  height: 100vh; /* Full viewport height */
-  align-items: stretch;
+  margin-top: 20px;
 }
 
-.authenImageContainer {
-  flex: 1;
-  padding-right: 10px;
-  vertical-align: middle;
-  background-image: url("./authen-image.jpg"); /* Background image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; /* Ensures full viewport height */
+.cta-button:hover {
+  background-color: #5aa33a;
+  color: white;
 }
 
-.authenLogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.authenLogo img {
-  width: 700px; /* Set the desired width for the image */
-  height: auto; /* Keeps the image aspect ratio */
-}
-
-.authenFormContainer {
-  flex: 1; /* Takes up 2/5 of the container width */
+.featured-recipes {
   padding: 20px;
-  height: 100vh; /* Ensures full viewport height */
+  text-align: center;
+}
+
+.featured-recipes h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.recipe-cards {
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally (optional) */
-  color: black;
-  font-family: DejaVu Sans Mono, monospace;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.authenFormContainer form {
-  width: 100%; /* Form takes up full container width */
-  max-width: 300px; /* Optional: limits form width */
+.recipe-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 150px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
-.loginButton {
-  background-color: #b7ce66;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 15px;
+.recipe-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.recipe-card h3 {
+  font-size: 1em;
+  color: #333;
+  margin-top: 10px;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #68b347;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-brand a {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.navbar-links a:hover {
+  color: #ccc;
+}
+
+.login-link {
+  background-color: #fff;
+  color: #68b347;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.login-link:hover {
+  background-color: #5aa33a;
+  color: white;
+}
+/* src/home.css */
+.cta-button {
+  background-color: #fff;
+  color: #68b347;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  font-size: 1.2em;
   cursor: pointer;
-  letter-spacing: 1px;
-  margin: 15px;
+  margin-top: 20px;
 }
 
-.loginButton:hover {
-  background-color: #9dce66;
+.cta-button:hover {
+  background-color: #5aa33a;
+  color: white;
 }
-
 .authenInput {
   border: 2px solid #b7ce66;
   border-radius: 5px;

@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./home.css";
+import "./login.css";
 import logoo from "./logo.png";
 import { Link } from "react-router-dom";
 

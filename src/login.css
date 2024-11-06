@@ -1,0 +1,116 @@
+/* Main Container */
+.mainContainer {
+  background-color: aliceblue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+/* Input Button */
+.inputButton, .loginButton {
+  background-color: rgb(202, 202, 202);
+  padding: 15px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin: 15px;
+}
+
+.loginButton {
+  background-color: #b7ce66;
+  padding: 10px 30px;
+}
+
+.loginButton:hover {
+  background-color: #9dce66;
+}
+
+/* Authentication Container */
+.authenContainer, .signupContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  align-items: stretch;
+}
+
+/* Image Container */
+.authenImageContainer, .signupImageContainer {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.authenImageContainer {
+  background-image: url("./authen-image.jpg");
+}
+
+.signupImageContainer {
+  background-image: url("./signup-img.jpg");
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Logo Styling */
+.authenLogo, .signupLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.authenLogo img, .signupLogo img {
+  width: 700px;
+  height: auto;
+}
+
+.signupLogo img {
+  width: 450px;
+}
+
+/* Form Container */
+.authenFormContainer {
+  flex: 1;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: DejaVu Sans Mono, monospace;
+}
+
+.authenFormContainer form {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Input Fields */
+.authenInput, .signupInput {
+  border: 2px solid #b7ce66;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0;
+}
+
+.signupFormContainer {
+  display: flex;
+  flex: 5;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: DejaVu Sans Mono, monospace;
+  justify-content: center;
+  padding-top: 80px;
+}
