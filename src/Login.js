@@ -4,47 +4,102 @@ import "./login.css";
 import logoo from "./logo.png";
 import { Link } from "react-router-dom";
 
-function LeftContainer() {
+function LeftLoginCard() {
   return (
-    <div className={"authenImageContainer"}>
-      <div className={"authenLogo"}>
-        <Link to="/">
-          <img src={logoo} />
-        </Link>
+    <div className={"leftLoginCard"}>
+      <input
+        className={"loginButton"}
+        type="button"
+        value={"Continue with Google"}
+      />
+      <input
+        className={"loginButton"}
+        type="button"
+        value={"Continue with Facebook"}
+      />
+      <Link to="/Signup" className={"redirectionsLogin"}>
+        Sign up with email
+      </Link>
+    </div>
+  );
+}
+
+function RightLoginCard() {
+  const navigate = useNavigate();
+  const onButtonClick = () => {
+    navigate("/Signup");
+  };
+
+  return (
+    <div className={"rightLoginCard"}>
+      <form>
+        <div style={{ textAlign: "left" }}>
+          <label>Email</label>
+          <input type="text" className="authenInput" />
+        </div>
+        <br />
+        <div style={{ textAlign: "left" }}>
+          <label>Password</label>
+          <input type="text" className="authenInput" />
+        </div>
+        <br />
+        <div style={{ textAlign: "left" }}>
+          <Link to="/" className={"redirectionsLogin"}>
+            Forgot password?
+          </Link>
+        </div>
+        <br />
+        <input type="submit" value={"Log in"} className={"loginButton"} />
+      </form>
+    </div>
+  );
+}
+
+function LoginCard() {
+  return (
+    <div className={"backgroundLogin"}>
+      <div className={"loginCard"}>
+        <div className={"loginLogo"}>
+          <Link to="/">
+            <img src={logoo} />
+          </Link>
+          <br />
+          <h3>Discovering flavors from around the world</h3>
+        </div>
+        <div className={"bottomLogin"}>
+          <LeftLoginCard />
+          <RightLoginCard />
+        </div>
+        <br />
+        <MoreInfo />
       </div>
     </div>
   );
 }
 
-function RightContainer() {
-  const navigate = useNavigate();
-  const onButtonClick = () => {
-    navigate("/Signup");
-  };
+function MoreInfo() {
   return (
-    <div className={"authenFormContainer"}>
-      <form>
-        <label>Username:</label>
-        <br />
-        <input type="text" className="authenInput" />
-        <br />
-        <label>Password:</label>
-        <br />
-        <input type="text" className="authenInput" />
-        <input type="submit" value={"Log in"} className={"loginButton"} />
-      </form>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div> Not a member? </div>
+    <div className={"moreInfo"}>
       <div>
-        <input
-          className={"loginButton"}
-          type="button"
-          onClick={onButtonClick}
-          value={"Sign up"}
-        />
+        <Link to="" className={"redirectionsLogin"}>
+          {" "}
+          About{" "}
+        </Link>
+        ⋆
+        <Link to="" className={"redirectionsLogin"}>
+          {" "}
+          Privacy{" "}
+        </Link>
+        ⋆
+        <Link to="" className={"redirectionsLogin"}>
+          {" "}
+          Contact{" "}
+        </Link>
+        ⋆
+        <Link to="" className={"redirectionsLogin"}>
+          {" "}
+          Recipi, Inc, 2024
+        </Link>
       </div>
     </div>
   );
@@ -53,8 +108,7 @@ function RightContainer() {
 const Login = (props) => {
   return (
     <div className="authenContainer">
-      <LeftContainer />
-      <RightContainer />
+      <LoginCard />
     </div>
   );
 };

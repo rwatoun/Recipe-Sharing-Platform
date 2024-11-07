@@ -10,7 +10,8 @@
 }
 
 /* Input Button */
-.inputButton, .loginButton {
+.inputButton,
+.loginButton {
   background-color: rgb(202, 202, 202);
   padding: 15px 20px;
   font-size: 15px;
@@ -23,7 +24,11 @@
 
 .loginButton {
   background-color: #b7ce66;
-  padding: 10px 30px;
+  padding: 10px 60px;
+  margin: 10px auto; /* Centers the button horizontally */
+  width: 300px;
+  display: block; /* Ensures margin auto works on inline elements */
+  box-sizing: border-box;
 }
 
 .loginButton:hover {
@@ -31,25 +36,108 @@
 }
 
 /* Authentication Container */
-.authenContainer, .signupContainer {
+.authenContainer,
+.signupContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   align-items: stretch;
+  background-image: url("./authen-image.jpg");
+}
+
+/* Background of the Login Page*/
+.backgroundLogin {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./signup-img.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Login Card*/
+.loginCard {
+  background-color: white;
+  padding: 40px;
+  width: 90%;
+  max-width: 700px; /* Controls the width */
+  max-height: 595px;
+  border-radius: 30px; /* Rounds the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+  text-align: center;
+}
+
+/* Login logo at the top of the Login Card*/
+.loginLogo {
+  text-align: center;
+}
+
+.loginLogo img {
+  width: 290px;
+}
+
+/* Bottom container that contains left and right of the Login Card*/
+.bottomLogin {
+  padding-top: 10px;
+  display: flex;
+}
+
+/* Left Container of the Login Card*/
+.leftLoginCard {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-right: 2px solid #ccc; /* Adjust color and thickness */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right Container of the Login Card*/
+.rightLoginCard {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for redirections such as forgotten passwords and signing up*/
+.redirectionsLogin {
+  font-size: 12px; /* Optional: Set a smaller font size */
+  color: #666; /* Optional: Customize color */
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.redirectionsLogin:hover {
+  color: #800020;
+}
+
+.moreInfo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /* Image Container */
-.authenImageContainer, .signupImageContainer {
+
+.signupImageContainer {
   flex: 1;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-}
-
-.authenImageContainer {
-  background-image: url("./authen-image.jpg");
 }
 
 .signupImageContainer {
@@ -60,14 +148,16 @@
 }
 
 /* Logo Styling */
-.authenLogo, .signupLogo {
+.authenLogo,
+.signupLogo {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.authenLogo img, .signupLogo img {
+.authenLogo img,
+.signupLogo img {
   width: 700px;
   height: auto;
 }
@@ -95,7 +185,8 @@
 }
 
 /* Input Fields */
-.authenInput, .signupInput {
+.authenInput,
+.signupInput {
   border: 2px solid #b7ce66;
   border-radius: 5px;
   padding: 10px;
