@@ -6,7 +6,7 @@
 }
 
 .hero-section {
-  background: #b7ce66;
+  background: #5aa33a;
   color: white;
   text-align: center;
   padding: 50px 20px;
@@ -81,16 +81,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b7ce66;
+  background-color: #5aa33a;
   padding: 10px 20px;
   color: white;
 }
 
-.navbar-brand a {
-  color: white;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
+.navbar-logo img {
+  width: 150px;
 }
 
 .navbar-links {
@@ -123,6 +120,14 @@
 .login-link:hover {
   background-color: #5aa33a;
   color: white;
+}
+
+.loginLogo {
+  text-align: center;
+}
+
+.loginLogo img {
+  width: 290px;
 }
 
 .recipesButton {

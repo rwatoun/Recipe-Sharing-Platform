@@ -2,12 +2,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./home.css"; // Reuse `home.css` for styling
+import logo from "./logo.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-brand">
-        <Link to="/">Recipi</Link>
+      <div className="navbar-logo">
+        <Link to="/">
+          <img src={logo} />
+        </Link>
       </div>
       <ul className="navbar-links">
         <li>

@@ -2,8 +2,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./navbar";
-
+import logo from "./logo.png";
 import "./home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -16,9 +17,13 @@ const Home = () => {
     <div className="home-page">
       <Navbar />
       <header className="hero-section">
-        <h1>Welcome to <span className="brand-name">Recipi</span></h1>
+        <h1>Welcome to </h1>
+        <div className={"loginLogo"}>
+          <Link to="/">
+            <img src={logo} />
+          </Link>
+        </div>
         <p>Discover, share, and enjoy recipes from around the world!</p>
-
       </header>
 
       <section className="featured-recipes">

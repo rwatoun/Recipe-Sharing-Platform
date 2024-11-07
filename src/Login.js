@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
-import logoo from "./logo.png";
+import logo from "./logo.png";
 import googleIcon from "./googleicon.png";
 import facebookIcon from "./facebookicon.png";
 import { Link } from "react-router-dom";
@@ -61,7 +61,7 @@ function LoginCard() {
       <div className={"loginCard"}>
         <div className={"loginLogo"}>
           <Link to="/">
-            <img src={logoo} />
+            <img src={logo} />
           </Link>
           <br />
           <h3>Discovering flavors from around the world</h3>
