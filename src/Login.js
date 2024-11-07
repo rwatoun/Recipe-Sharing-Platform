@@ -2,21 +2,21 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
 import logoo from "./logo.png";
+import googleIcon from "./googleicon.png";
+import facebookIcon from "./facebookicon.png";
 import { Link } from "react-router-dom";
 
 function LeftLoginCard() {
   return (
     <div className={"leftLoginCard"}>
-      <input
-        className={"loginButton"}
-        type="button"
-        value={"Continue with Google"}
-      />
-      <input
-        className={"loginButton"}
-        type="button"
-        value={"Continue with Facebook"}
-      />
+      <button className={"loginButton"}>
+        <img src={googleIcon} className={"icon"} />
+        Continue with Google
+      </button>
+      <button className={"loginButton"}>
+        <img src={facebookIcon} className={"icon"} />
+        Continue with Facebook
+      </button>
       <Link to="/Signup" className={"redirectionsLogin"}>
         Sign up with email
       </Link>
