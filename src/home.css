@@ -6,7 +6,7 @@
 }
 
 .hero-section {
-  background: #68b347;
+  background: #b7ce66;
   color: white;
   text-align: center;
   padding: 50px 20px;
@@ -81,7 +81,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #68b347;
+  background-color: #b7ce66;
   padding: 10px 20px;
   color: white;
 }
@@ -137,7 +137,7 @@
   position: absolute;
   top: 100%; /* Positions it below the button */
   left: 0;
-  background-color: #68b347;
+  background-color: #b7ce66;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
