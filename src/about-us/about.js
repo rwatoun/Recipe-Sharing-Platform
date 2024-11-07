@@ -12,6 +12,10 @@ function About() {
           <div className={"leftFirstContent"}></div>
           <div className={"rightFirstContent"}></div>
         </div>
+        <div className={"secondContent"}>
+          <div className={"leftSecondContent"}></div>
+          <div className={"rightSecondContent"}></div>
+        </div>
       </div>
     </div>
   );

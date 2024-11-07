@@ -1,0 +1,58 @@
+.content {
+  background-color: grey;
+  height: 100%;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.firstContent {
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.leftFirstContent {
+  background-color: aqua;
+  width: 400px;
+  height: 400px;
+}
+
+.rightFirstContent {
+  background-color: pink;
+  width: 400px;
+  height: 400px;
+}
+
+/* Second Container*/
+
+.secondContent {
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+}
+
+.leftSecondContent {
+  background-color: aqua;
+  width: 400px;
+  height: 400px;
+}
+
+.rightSecondContent {
+  background-color: pink;
+  width: 400px;
+  height: 400px;
+}
