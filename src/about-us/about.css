@@ -178,6 +178,7 @@
 .buttonFourthContent.selected {
   background-color: #9dce66;
   color: white;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 .rightBottomFourthContent {
