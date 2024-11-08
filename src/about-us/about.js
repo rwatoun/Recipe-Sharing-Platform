@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../navbar";
 import "./about.css";
 import peopleCooking from "../peoplecooking.png";
+import third from "../third.jpg";
 
 function FirstContent() {
   return (
@@ -37,10 +38,47 @@ function FirstContent() {
 function SecondContent() {
   return (
     <div className={"secondContent"}>
-      <div className={"leftSecondContent"}></div>
-      <div className={"rightSecondContent"}></div>
+      <div className={"leftSecondContent"}>
+        <h3>flavors from around the world</h3>
+        <p>
+          Blabla blabla blabla, blabla blabla blabla. Blabla blabla blabla
+          blabla blabla, blabla blabla blabla blabla blabla. Blabla blabla
+          blabla blabla, blabla blabla blabla blabla. Blabla blabla blabla
+          blabla, blabla blabla blabla. Blabla blabla blabla blabla blabla
+          blabla blabla. Blabla blabla blabla blabla blabla, blabla blabla
+          blabla. Blabla blabla blabla blabla, blabla blabla blabla blabla
+          blabla. Blabla blabla blabla blabla blabla, blabla blabla blabla.
+          Blabla blabla blabla blabla blabla blabla blabla. Blabla blabla blabla
+          blabla blabla, blabla blabla blabla. Blabla blabla blabla blabla,
+          blabla blabla blabla blabla blabla blabla.
+        </p>
+      </div>
+      <div className={"rightSecondContent"}>
+        <p style={{ alignSelf: "flex-start" }}>
+          Blabla blabla blabla, blabla blabla blabla. Blabla blabla blabla
+          blabla blabla, blabla blabla blabla blabla blabla. Blabla blabla
+          blabla blabla, blabla blabla blabla blabla. Blabla blabla blabla
+          blabla, blabla blabla blabla.
+        </p>
+        <p style={{ alignSelf: "flex-start" }}>
+          Blabla blabla blabla, blabla blabla blabla. Blabla blabla blabla
+          blabla blabla, blabla blabla blabla blabla blabla. Blabla blabla
+          blabla blabla, blabla blabla blabla blabla. Blabla blabla blabla
+          blabla, blabla blabla blabla.
+        </p>
+        <p style={{ alignSelf: "flex-start" }}>
+          Blabla blabla blabla, blabla blabla blabla. Blabla blabla blabla
+          blabla blabla, blabla blabla blabla blabla blabla. Blabla blabla
+          blabla blabla, blabla blabla blabla blabla. Blabla blabla blabla
+          blabla, blabla blabla blabla.
+        </p>
+      </div>
     </div>
   );
+}
+
+function ThirdContent() {
+  return <div className={"thirdContainer"}></div>;
 }
 
 function About() {
@@ -50,6 +88,7 @@ function About() {
       <div className={"content"}>
         <FirstContent />
         <SecondContent />
+        <ThirdContent />
       </div>
     </div>
   );
