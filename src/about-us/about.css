@@ -97,11 +97,111 @@
 
 /* Third Container*/
 
-.thirdContainer {
+.thirdContent {
   width: 100%;
   height: 370px;
   background-image: url("../third.jpg");
   background-size: cover; /* Scales the image to cover the container */
   background-position: center; /* Centers the image in the container */
   background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
+}
+
+/* Fourth Container*/
+
+.fourthContent {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 900px;
+  padding: 20px;
+}
+
+.topFourthContent {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-right: 250px;
+  padding-left: 250px;
+  width: 1400px;
+  height: 270px;
+}
+
+.bottomFourthContent {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  background-color: white;
+  width: 1150px;
+  height: 560px;
+  padding: 20px;
+  margin-left: 100px;
+}
+
+.leftBottomFourthContent {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 500px;
+}
+
+.buttonFourthContent {
+  display: flex;
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  width: 180px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+}
+
+.buttonFourthContent:hover {
+  background-color: gray;
+}
+
+.buttonFourthContent.selected {
+  background-color: #9dce66;
+  color: white;
+}
+
+.rightBottomFourthContent {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 510px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.imgRightBottomFourthContent {
+  flex: 3;
+  width: 650px;
+}
+.imgRightBottomFourthContent img {
+  width: 650px;
+  border-radius: 10px;
+}
+
+.textRightBottomFourthContent {
+  flex: 1;
+  text-align: center;
 }
