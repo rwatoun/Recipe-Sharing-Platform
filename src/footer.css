@@ -1,0 +1,54 @@
+.footerContent {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: aqua;
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+}
+
+.topFooterContent {
+  flex: 3;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  background-color: pink;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.rightTopFooterContent {
+  flex: 1;
+  display: flex;
+  background-color: blue;
+  text-align: center;
+  flex-direction: column;
+}
+
+.centerTopFooterContent {
+  flex: 1;
+  display: flex;
+  background-color: blue;
+  text-align: center;
+  flex-direction: column;
+}
+
+.leftTopFooterContent {
+  flex: 1;
+  display: flex;
+  background-color: blue;
+  text-align: center;
+  flex-direction: column;
+}
+
+.bottomFooterContent {
+  flex: 1;
+  background-color: blueviolet;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}

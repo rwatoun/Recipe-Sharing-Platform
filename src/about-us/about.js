@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../navbar";
 import "./about.css";
+import Footer from "../footer";
 import peopleCooking from "../people-cooking.png";
 import image1 from "../image1.jpeg";
 import image2 from "../image2.jpg";
@@ -162,6 +163,7 @@ function About() {
         <ThirdContent />
         <FourthContent />
       </div>
+      <Footer />
     </div>
   );
 }
