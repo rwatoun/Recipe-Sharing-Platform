@@ -2,6 +2,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./navbar";
+import Footer from "./footer";
 import logo from "./logo.png";
 import "./home.css";
 import { Link } from "react-router-dom";
@@ -43,6 +44,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
