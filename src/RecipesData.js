@@ -1,3 +1,5 @@
+// This file contains the data about the recipes we have
+
 const recipes = {
   1: {
     title: "Spaghetti Carbonara",

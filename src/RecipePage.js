@@ -1,7 +1,9 @@
+// This file retrieves the recipe ID from the URL, fetches the recipe data, and displays it using the Recipe component
+
 import React from "react";
 import { useParams } from "react-router-dom";
 import Recipe from "./Recipe";
-import recipes from "./RecipesData"; // Import mock data
+import recipes from "./RecipesData";
 
 function RecipePage() {
   const { id } = useParams();
