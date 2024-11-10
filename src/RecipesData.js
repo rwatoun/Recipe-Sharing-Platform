@@ -1,12 +1,17 @@
 // This file contains the data about the recipes we have
+import spagh from "./spagh.png";
 
 const recipes = {
   1: {
     title: "Spaghetti Carbonara",
-    image: "path/to/spaghetti.jpg",
+    image: spagh, // TO CHANGE
+    numIngredients: "5",
+    time: "30 ",
+    calories: "500",
     ingredients: ["Spaghetti", "Eggs", "Parmesan Cheese", "Pancetta", "Pepper"],
     instructions:
       "Cook the spaghetti. In a bowl, mix eggs and Parmesan. Combine with pancetta and pepper.",
+    author: "Marwa",
   },
   2: {
     title: "Avocado Toast",

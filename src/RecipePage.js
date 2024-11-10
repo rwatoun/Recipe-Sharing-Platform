@@ -15,8 +15,12 @@ function RecipePage() {
     <Recipe
       title={recipe.title}
       image={recipe.image}
+      numIngredients={recipe.numIngredients}
+      time={recipe.time}
+      calories={recipe.calories}
       ingredients={recipe.ingredients}
       instructions={recipe.instructions}
+      author={recipe.author}
     />
   );
 }
