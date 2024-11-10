@@ -8,6 +8,7 @@
   width: 100%;
   height: 310px;
   padding: 20px;
+  margin-top: 30px;
 }
 
 .topFooterContent {
@@ -19,7 +20,7 @@
   width: 1600px;
   height: 100%;
   padding: 20px;
-  border-top: 2px solid #ebecea;
+  border-top: 2px solid #d1dbc5;
 }
 
 .leftTopFooterContent {
