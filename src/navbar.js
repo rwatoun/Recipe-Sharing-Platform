@@ -19,9 +19,15 @@ const Navbar = () => {
         <li className="navItem">
           <button className={"recipesButton"}>Recipes</button>
           <div className="dropdownMenu">
-            <Link className="recipeTitle">Recipe 1</Link>
-            <Link className="recipeTitle">Recipe 2</Link>
-            <Link className="recipeTitle">Recipe 3</Link>
+            <Link className="recipeTitle" to="/recipe/1">
+              Recipe 1
+            </Link>
+            <Link className="recipeTitle" to="/recipe/2">
+              Recipe 2
+            </Link>
+            <Link className="recipeTitle" to="/recipe/3">
+              Recipe 3
+            </Link>
           </div>
         </li>
         <li>

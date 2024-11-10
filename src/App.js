@@ -4,6 +4,7 @@ import Home from "./home";
 import Login from "./Login";
 import Signup from "./Signup";
 import About from "./about-us/about";
+import RecipePage from "./RecipePage";
 import { useEffect, useState } from "react";
 import "./App.css";
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/About" element={<About />} />
+          <Route path="/recipe/:id" element={<RecipePage />} />
         </Routes>
       </BrowserRouter>
     </div>
