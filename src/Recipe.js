@@ -1,9 +1,10 @@
 // This file contains the template for how recipes will be displayed
 
-import React from "react";
+import React, { useState } from "react";
 import "./Recipe.css";
 import Navbar from "./navbar";
 import Footer from "./footer";
+import bullet from "./bullet.png";
 
 function Recipe({
   title,
@@ -15,6 +16,13 @@ function Recipe({
   instructions,
   author,
 }) {
+  // State to manage the selected instruction step
+  const [selectedStep, setSelectedStep] = useState(0);
+
+  const handleStepClick = (index) => {
+    setSelectedStep(index);
+  };
+
   return (
     <div className={"recipePage"}>
       <Navbar />
@@ -30,21 +38,58 @@ function Recipe({
           <div className={"bottomRightRecipeFirstContent"}>
             <div className={"numIngre"}>
               {numIngredients}
-              <p className={"textThree"}>Ingredients</p>
+              <div className={"textThree"}>Ingredients</div>
             </div>
             <div className={"timee"}>
               {time}
-              <p className={"textThree"}>Minutes</p>
+              <div className={"textThree"}>Minutes</div>
             </div>
             <div className={"caloriess"}>
               {calories}
-              <p className={"textThree"}>Calories</p>
+              <div className={"textThree"}>Calories</div>
             </div>
           </div>
         </div>
       </div>
-      <div className={"recipeSecondContent"}></div>
-      <div className={"recipeThirdContent"}></div>
+      <div className={"recipeSecondContent"}>
+        <div className={"topRecipeSecondContent"}>
+          <div className={"leftTopRecipeSecondContent"}>Ingredients</div>
+          <div className={"rightTopRecipeSecondContent"}></div>
+        </div>
+        <div className={"bottomRecipeSecondContent"}>
+          <ul className="ingredientsList">
+            {ingredients.map((ingredient, index) => (
+              <li key={index} className="ingredientItem">
+                <img src={bullet} className={"customBullet"} />
+                {ingredient}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className={"recipeThirdContent"}>
+        <div className={"topRecipeThirdContent"}>Instructions</div>
+        <div className={"bottomRecipeThirdContent"}>
+          <div className={"leftBottomRecipeThirdContent"}>
+            {instructions.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => handleStepClick(index)}
+                className={`stepButton ${
+                  selectedStep === index ? "active" : ""
+                }`}
+              >
+                Step {index + 1}
+              </button>
+            ))}
+          </div>
+          <div className={"rightBottomRecipeThirdContent"}>
+            <div className={"stepBubble"}>
+              <p>{instructions[selectedStep]}</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   );
