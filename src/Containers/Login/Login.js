@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
-import logo from "./logo.png";
+import logo from "../../Components/Logo/logo.png";
 import googleIcon from "./googleicon.png";
 import facebookIcon from "./facebookicon.png";
 import { Link } from "react-router-dom";

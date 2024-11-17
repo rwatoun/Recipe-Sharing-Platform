@@ -1,9 +1,9 @@
 // src/home.js
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "./navbar";
-import Footer from "./footer";
-import logo from "./logo.png";
+import Navbar from "../../Components/Navbar/navbar";
+import Footer from "../Footer/footer";
+import logo from "../../Components/Logo/logo.png";
 import "./home.css";
 import { Link } from "react-router-dom";
 

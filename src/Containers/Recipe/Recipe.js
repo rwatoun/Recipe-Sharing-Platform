@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import "./Recipe.css";
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Navbar from "../../Components/Navbar/navbar";
+import Footer from "../Footer/footer";
 import bullet from "./bullet.png";
 
 function Recipe({

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import "./home.css";
-import logoo from "./logo.png";
+import "./Sign-in.css";
+import logoo from "../../Components/Logo/logo.png";
 
 const Signup = (props) => {
   const navigate = useNavigate();

@@ -1,8 +1,8 @@
 // src/navbar.js
 import React from "react";
 import { Link } from "react-router-dom";
-import "./home.css"; // Reuse `home.css` for styling
-import logo from "./logo.png";
+import "./navbar.css";
+import logo from "../Logo/logo.png";
 
 const Navbar = () => {
   return (

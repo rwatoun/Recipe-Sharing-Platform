@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./home";
-import Login from "./Login";
-import Signup from "./Signup";
-import About from "./about-us/about";
-import RecipePage from "./RecipePage";
+import Home from "./Containers/Home/home";
+import Login from "./Containers/Login/Login";
+import Signup from "./Containers/Sign-In/Sign-in";
+import About from "./Containers/About/about";
+import RecipePage from "./Containers/Recipe/RecipePage";
 import { useEffect, useState } from "react";
 import "./App.css";
 

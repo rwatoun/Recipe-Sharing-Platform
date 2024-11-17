@@ -4,7 +4,7 @@ import "./footer.css";
 import insta from "./insta.png";
 import linkedin from "./linkedin.png";
 import youtube from "./youtube.png";
-import logo from "./logo.png";
+import logo from "../../Components/Logo/logo.png";
 
 function Footer() {
   return (

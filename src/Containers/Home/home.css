@@ -1,0 +1,103 @@
+/* src/home.css */
+.home-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f7f9fc;
+}
+
+.hero-section {
+  background: #5aa33a;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  margin-bottom: 30px;
+}
+
+.hero-section .brand-name {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #68b347;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #5aa33a;
+  color: white;
+}
+
+.featured-recipes {
+  padding: 20px;
+  text-align: center;
+}
+
+.featured-recipes h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.recipe-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.recipe-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 150px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.recipe-card h3 {
+  font-size: 1em;
+  color: #333;
+  margin-top: 10px;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+/* src/home.css */
+.cta-button {
+  background-color: #fff;
+  color: #68b347;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #5aa33a;
+  color: white;
+}
+.authenInput {
+  border: 2px solid #b7ce66;
+  border-radius: 5px;
+  padding: 10px; /* Adds inner padding for better spacing */
+  width: 100%; /* Makes the input full width */
+  box-sizing: border-box; /* Ensures padding doesn’t increase the input's width */
+  margin-top: 10px; /* Adds space below each input */
+  margin-bottom: 10px;
+}

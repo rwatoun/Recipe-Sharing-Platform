@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../navbar";
+import Navbar from "../../Components/Navbar/navbar";
 import "./about.css";
-import Footer from "../footer";
-import peopleCooking from "../people-cooking.png";
-import image1 from "../image1.jpeg";
-import image2 from "../image2.jpg";
-import image3 from "../image3.jpg";
-import image4 from "../image4.jpg";
+import Footer from "../Footer/footer";
+import peopleCooking from "./people-cooking.png";
+import image1 from "./image1.jpeg";
+import image2 from "./image2.jpg";
+import image3 from "./image3.jpg";
+import image4 from "./image4.jpg";
 
 function FirstContent() {
   const navigate = useNavigate();
