@@ -32,8 +32,8 @@ function Recipe({
         </div>
         <div className={"rightRecipeFirstContent"}>
           <div className={"topRightRecipeFirstContent"}>
-            <h1>{title}</h1>
-            <p>By {author}</p>
+            <div className={"titleOfRecipe"}>{title}</div>
+            <p className={"nameOfAuthor"}>By {author}</p>
           </div>
           <div className={"bottomRightRecipeFirstContent"}>
             <div className={"numIngre"}>
