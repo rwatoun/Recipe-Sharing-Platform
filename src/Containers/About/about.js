@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 import Navbar from "../../Components/Navbar/navbar";
 import "./about.css";
 import Footer from "../Footer/footer";
@@ -21,7 +22,12 @@ function FirstContent() {
           {" "}
           ABOUT US
         </p>
-        <h1>nice to meet you.</h1>
+        <motion.div
+          whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.5 }}
+        >
+          <h1>nice to meet you.</h1>
+        </motion.div>
         <p>
           Blabla blabla blabla, blabla blabla blabla. Blabla blabla blabla
           blabla blabla, blabla blabla blabla blabla blabla. Blabla blabla
