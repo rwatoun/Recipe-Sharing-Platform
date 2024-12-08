@@ -5,6 +5,7 @@ import "./Recipe.css";
 import Navbar from "../../Components/Navbar/navbar";
 import Footer from "../Footer/footer";
 import bullet from "./bullet.png";
+import Presentation from "./Presentation/presentation";
 
 function Recipe({
   title,
@@ -26,31 +27,15 @@ function Recipe({
   return (
     <div className={"recipePage"}>
       <Navbar />
-      <div className={"recipeFirstContent"}>
-        <div className={"leftRecipeFirstContent"}>
-          <img className={"recipeImg"} src={image} />
-        </div>
-        <div className={"rightRecipeFirstContent"}>
-          <div className={"topRightRecipeFirstContent"}>
-            <div className={"titleOfRecipe"}>{title}</div>
-            <p className={"nameOfAuthor"}>By {author}</p>
-          </div>
-          <div className={"bottomRightRecipeFirstContent"}>
-            <div className={"numIngre"}>
-              {numIngredients}
-              <div className={"textThree"}>Ingredients</div>
-            </div>
-            <div className={"timee"}>
-              {time}
-              <div className={"textThree"}>Minutes</div>
-            </div>
-            <div className={"caloriess"}>
-              {calories}
-              <div className={"textThree"}>Calories</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Presentation
+        title={title}
+        image={image}
+        numIngredients={numIngredients}
+        time={time}
+        calories={calories}
+        author={author}
+      />
+
       <div className={"recipeSecondContent"}>
         <div className={"topRecipeSecondContent"}>
           <div className={"leftTopRecipeSecondContent"}>Ingredients</div>
