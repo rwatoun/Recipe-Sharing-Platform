@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./presentation.css";
 
-function presentation({
+function Presentation({
   title,
   image,
   numIngredients,
@@ -38,4 +38,4 @@ function presentation({
   );
 }
 
-export default presentation;
+export default Presentation;
