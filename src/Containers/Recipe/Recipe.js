@@ -6,6 +6,7 @@ import Navbar from "../../Components/Navbar/navbar";
 import Footer from "../Footer/footer";
 import bullet from "./bullet.png";
 import Presentation from "./Presentation/presentation";
+import Ingredients from "./Ingredients/ingredients";
 
 function Recipe({
   title,
@@ -35,23 +36,8 @@ function Recipe({
         calories={calories}
         author={author}
       />
+      <Ingredients ingredients={ingredients} />
 
-      <div className={"recipeSecondContent"}>
-        <div className={"topRecipeSecondContent"}>
-          <div className={"leftTopRecipeSecondContent"}>Ingredients</div>
-          <div className={"rightTopRecipeSecondContent"}></div>
-        </div>
-        <div className={"bottomRecipeSecondContent"}>
-          <ul className="ingredientsList">
-            {ingredients.map((ingredient, index) => (
-              <li key={index} className="ingredientItem">
-                <img src={bullet} className={"customBullet"} />
-                {ingredient}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
       <div className={"recipeThirdContent"}>
         <div className={"topRecipeThirdContent"}>Instructions</div>
         <div className={"bottomRecipeThirdContent"}>

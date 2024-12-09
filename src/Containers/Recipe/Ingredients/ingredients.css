@@ -1,0 +1,123 @@
+.recipeSecondContent {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  padding-top: 160px;
+  padding-bottom: 25px;
+
+  font-family: "Playfair Display", serif;
+}
+
+/* Content on the left - Ingredients*/
+.recipeSecondContentLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.topRecipeSecondContentLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 30px;
+}
+
+.leftTopRecipeSecondContentLeft {
+  flex: 1;
+  font-size: 50px;
+}
+
+.rightTopRecipeSecondContentLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: -18px;
+  gap: 10px;
+}
+
+.metricButton {
+  display: flex;
+  background-color: #9dce66;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  width: 130px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+}
+
+.USCustomaryButton {
+  display: flex;
+  background-color: #9dce66;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  width: 150px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+}
+
+.bottomRecipeSecondContentLeft {
+  flex: 4;
+  padding: 40px;
+  align-items: flex-start;
+}
+
+.ingredientsList {
+  list-style-type: none; /* Adds bullets to the list */
+}
+
+.ingredientItem {
+  margin-bottom: 5px; /* Adds space between items */
+  font-size: 20px;
+  text-align: left;
+}
+
+/* Content on the right - Equipment */
+.recipeSecondContentRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topRecipeSecondContentRight {
+  flex: 1;
+  display: flex;
+  font-size: 50px;
+  padding: 30px;
+}
+
+.bottomRecipeSecondContentRight {
+  flex: 4;
+  padding: 40px;
+  align-items: flex-start;
+  display: flex;
+  font-size: 20px;
+}
