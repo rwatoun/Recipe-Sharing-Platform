@@ -41,6 +41,7 @@
 }
 
 .stepButton {
+  font-family: "Playfair Display", serif;
   display: flex;
   margin-bottom: 10px;
   background-color: white;

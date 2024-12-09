@@ -9,6 +9,7 @@ import logo from "../../Components/Logo/logo.png";
 function Footer() {
   return (
     <footer className={"footerContent"}>
+      <div className={"bufferElement"}></div>
       <div className={"topFooterContent"}>
         <div className={"leftTopFooterContent"}>
           <Link to="/">
@@ -38,12 +39,12 @@ function Footer() {
       </div>
       <div className={"bottomFooterContent"}>
         <div className={"leftBottomFooterContent"}>
-          <Link className={"text"}>Copyright @ 2024 Recipi</Link>
+          <Link className={"smallText"}>Copyright @ 2024 Recipi</Link>
         </div>
         <div className={"centerBottomFooterContent"}>
-          <Link className={"text"}>Privacy Policy</Link>|
-          <Link className={"text"}>Legal Stuff</Link>|
-          <Link className={"text"}>Accessibility</Link>
+          <Link className={"smallText"}>Privacy Policy</Link>|
+          <Link className={"smallText"}>Legal Stuff</Link>|
+          <Link className={"smallText"}>Accessibility</Link>
         </div>
         <div className={"rightBottomFooterContent"}>
           <a>
