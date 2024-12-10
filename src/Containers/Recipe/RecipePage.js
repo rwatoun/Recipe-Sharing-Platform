@@ -14,6 +14,7 @@ function RecipePage() {
   return (
     <Recipe
       title={recipe.title}
+      description={recipe.description}
       image={recipe.image}
       numIngredients={recipe.numIngredients}
       time={recipe.time}

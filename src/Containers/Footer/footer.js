@@ -42,8 +42,8 @@ function Footer() {
           <Link className={"smallText"}>Copyright @ 2024 Recipi</Link>
         </div>
         <div className={"centerBottomFooterContent"}>
-          <Link className={"smallText"}>Privacy Policy</Link>|
-          <Link className={"smallText"}>Legal Stuff</Link>|
+          <Link className={"smallText"}>Privacy Policy</Link>-
+          <Link className={"smallText"}>Legal Stuff</Link>-
           <Link className={"smallText"}>Accessibility</Link>
         </div>
         <div className={"rightBottomFooterContent"}>

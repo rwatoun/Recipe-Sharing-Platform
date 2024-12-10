@@ -4,6 +4,7 @@ import "./presentation.css";
 function Presentation({
   title,
   image,
+  description,
   numIngredients,
   time,
   calories,
@@ -17,7 +18,10 @@ function Presentation({
       <div className={"rightRecipeFirstContent"}>
         <div className={"topRightRecipeFirstContent"}>
           <div className={"titleOfRecipe"}>{title}</div>
-          <p className={"nameOfAuthor"}>By {author}</p>
+          <p className={"nameOfAuthor"}>
+            By {author} <br />
+          </p>
+          <div className={"descriptionOfRecipe"}>{description}</div>
         </div>
         <div className={"bottomRightRecipeFirstContent"}>
           <div className={"numIngre"}>

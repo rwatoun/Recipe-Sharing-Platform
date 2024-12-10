@@ -11,6 +11,7 @@ import Instructions from "./Instructions/instructions";
 function Recipe({
   title,
   image,
+  description,
   numIngredients,
   time,
   calories,
@@ -23,6 +24,7 @@ function Recipe({
       <Navbar />
       <Presentation
         title={title}
+        description={description}
         image={image}
         numIngredients={numIngredients}
         time={time}

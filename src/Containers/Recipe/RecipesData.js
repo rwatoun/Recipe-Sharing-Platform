@@ -4,6 +4,8 @@ import spagh from "./spagh.png";
 const recipes = {
   1: {
     title: "Spaghetti Carbonara",
+    description:
+      "This is a beautifully made italian dish and blablablablablablablablablablablablabalablabalablablabalbalablabalalablablablablablablablablablabalablabalablablabalbalablabalablablablablablabla",
     image: spagh, // TO CHANGE
     numIngredients: "5",
     time: "30 ",
