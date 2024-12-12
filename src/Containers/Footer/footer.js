@@ -17,24 +17,24 @@ function Footer() {
           </Link>
         </div>
         <div className={"centerTopFooterContent"}>
-          <p>Company</p>
-          <Link className={"text"}>Link 1</Link>
+          <p>company</p>
+          <Link className={"text"}>link 1</Link>
           <br />
-          <Link className={"text"}> Link 2</Link>
+          <Link className={"text"}> link 2</Link>
           <br />
-          <Link className={"text"}>Link 3</Link>
+          <Link className={"text"}>link 3</Link>
           <br />
-          <Link className={"text"}>Link 4</Link>
+          <Link className={"text"}>link 4</Link>
         </div>
         <div className={"rightTopFooterContent "}>
-          <p>Resources</p>
-          <Link className={"text"}>Link 1</Link>
+          <p>resources</p>
+          <Link className={"text"}>link 1</Link>
           <br />
-          <Link className={"text"}>Link 2</Link>
+          <Link className={"text"}>link 2</Link>
           <br />
-          <Link className={"text"}>Link 3</Link>
+          <Link className={"text"}>link 3</Link>
           <br />
-          <Link className={"text"}>Link 4</Link>
+          <Link className={"text"}>link 4</Link>
         </div>
       </div>
       <div className={"bottomFooterContent"}>
